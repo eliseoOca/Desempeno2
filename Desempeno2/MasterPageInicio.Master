@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageInicio.master.cs" Inherits="Desempeno2.MasterPageInicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="estilos.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="navbar">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/registracion.aspx">RegistroLogin</asp:HyperLink>
+            &nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/gestionDeArchivos.aspx">Gestion De Archivos</asp:HyperLink>
+            &nbsp;
+             <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/index.aspx"></asp:HyperLink>
+            <div>
+
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <p>Footer</p>
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>
